@@ -1,0 +1,130 @@
+<i class='bx bx-pause'></i>
+
+  <div class="song_list">
+        <div class="cross_icon"><i class='bx bx-x'></i></div>
+        <ul class="songListUl">
+            <li class="sondLi">
+<div class="sondList">
+    <div class="list_img">
+        <img src="./covers/1.jpg" alt="">
+    </div>
+    <div class="list_detail">
+        <div class="list_text">
+            <p>this is list song name</p>
+        </div>
+        <div class="list_song_duration">3:04</div>
+    </div>
+</div>
+            </li>
+            <li class="sondLi">
+               
+                <div class="sondList">
+                    <div class="list_img">
+                        <img src="./covers/1.jpg" alt="">
+                    </div>
+                    <div class="list_detail">
+                        <div class="list_text">
+                            <p>this is list song name</p>
+                        </div>
+                        <div class="list_song_duration">3:04</div>
+                    </div>
+                </div>
+                            </li>
+                            <li class="sondLi">
+                                <div class="sondList">
+                                    <div class="list_img">
+                                        <img src="./covers/1.jpg" alt="">
+                                    </div>
+                                    <div class="list_detail">
+                                        <div class="list_text">
+                                            <p>this is list song name</p>
+                                        </div>
+                                        <div class="list_song_duration">3:04</div>
+                                    </div>
+                                </div>
+                                            </li>
+                                            <li class="sondLi">
+                                                <div class="sondList">
+                                                    <div class="list_img">
+                                                        <img src="./covers/1.jpg" alt="">
+                                                    </div>
+                                                    <div class="list_detail">
+                                                        <div class="list_text">
+                                                            <p>this is list song name</p>
+                                                        </div>
+                                                        <div class="list_song_duration">3:04</div>
+                                                    </div>
+                                                </div>
+                                                            </li>
+        </ul>
+    </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+     <div class="song_list">
+        <div class="cross_icon"><i class='bx bx-x'></i></div>
+        <ul class="songListUl">
+            <li class="sondLi">
+<div class="sondList">
+    <div class="list_img">
+        <img src="./covers/1.jpg" alt="">
+    </div>
+    <div class="list_detail">
+        <div class="list_text">
+            <p>this is list song name</p>
+        </div>
+        <div class="list_song_duration">3:04</div>
+    </div>
+</div>
+            </li>
+            <li class="sondLi">
+               
+                <div class="sondList">
+                    <div class="list_img">
+                        <img src="./covers/1.jpg" alt="">
+                    </div>
+                    <div class="list_detail">
+                        <div class="list_text">
+                            <p>this is list song name</p>
+                        </div>
+                        <div class="list_song_duration">3:04</div>
+                    </div>
+                </div>
+                            </li>
+                            <li class="sondLi">
+                                <div class="sondList">
+                                    <div class="list_img">
+                                        <img src="./covers/1.jpg" alt="">
+                                    </div>
+                                    <div class="list_detail">
+                                        <div class="list_text">
+                                            <p>this is list song name</p>
+                                        </div>
+                                        <div class="list_song_duration">3:04</div>
+                                    </div>
+                                </div>
+                                            </li>
+                                            <li class="sondLi">
+                                                <div class="sondList">
+                                                    <div class="list_img">
+                                                        <img src="./covers/1.jpg" alt="">
+                                                    </div>
+                                                    <div class="list_detail">
+                                                        <div class="list_text">
+                                                            <p>this is list song name</p>
+                                                        </div>
+                                                        <div class="list_song_duration">3:04</div>
+                                                    </div>
+                                                </div>
+                                                            </li>
+        </ul>
+    </div>
+   </div>

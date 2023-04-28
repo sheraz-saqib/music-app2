@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgb(26, 182, 221),rgb(14, 87, 184));
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    max-width: 40rem;
+    min-height: 44rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.925);
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.096);
+    padding: 1.2rem;
+position: relative;
+margin: 0 1.5rem;
+}
+.color_change{
+    animation: change_color 10s infinite;
+}
+@keyframes change_color {
+    from {background: linear-gradient(to top,rgb(221, 221, 221), rgba(111, 0, 255, 0.699) 90%)}
+
+    10%{
+        background: linear-gradient(to top,rgb(221, 221, 221), rgba(147, 0, 255, 0.829) 90%);
+    }
+    20%{
+        background: linear-gradient(to top,rgb(221, 221, 221), rgba(177, 0, 255, 0.829) 90%);
+    }
+    30%{
+        background: linear-gradient(to top,rgb(221, 221, 221), rgba(187, 0, 255, 0.829) 90%);
+    }
+    40%{
+        background: linear-gradient(to top,rgb(221, 221, 221), rgba(190, 0, 255, 0.829) 90%);
+    }
+    50%{
+        background: linear-gradient(to top,rgb(221, 221, 221), rgba(200, 0, 255, 0.829) 90%);
+    }
+    60%{
+        background: linear-gradient(to top,rgb(221, 221, 221), rgba(230, 0, 255, 0.829) 90%);
+    }
+    70%{
+        background: linear-gradient(to top,rgb(221, 221, 221), rgba(240, 0, 255, 0.829) 90%);
+    }
+    80%{
+        background: linear-gradient(to top,rgb(221, 221, 221), rgba(247, 0, 255, 0.829) 90%);
+    }
+    90%{
+        background: linear-gradient(to top,rgb(221, 221, 221), rgba(200, 0, 255, 0.829) 90%);
+    }
+    95%{
+        background: linear-gradient(to top,rgb(221, 221, 221), rgba(150, 0, 255, 0.829) 90%);
+    }
+    to {background: linear-gradient(to top,rgb(221, 221, 221), rgba(111, 0, 255, 0.699) 90%)}
+    
+}
+.imgArea{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.imgArea img{
+    max-width: 38rem;
+    max-height: 30rem;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+
+}
+.song_name{
+    margin-top: 1rem;
+    margin-left: 0.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+.sound_detail{
+    min-height: 4rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 .2rem;
+}
+.sound_detail .sound_time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.733);
+    margin-top: 0.5rem;
+}
+.sound_time span{
+    font-weight: 500;
+}
+.sound_detail .progressBarArea{
+
+    background-color: rgba(182, 182, 182, 0.733);
+  width: 100%;
+  height: .4rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+ cursor: pointer;
+}
+.progressBarArea .progreeLine{
+    background: linear-gradient(45deg,rgba(247, 0, 255, 0.829),rgb(111, 0, 255));
+width: 0;
+height: .4rem;
+z-index: 1;
+border-radius: 2rem;
+position: relative;
+transition: width .1s linear;
+cursor: pointer;
+}
+.progressBarArea .progreeLine::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: linear-gradient(45deg,rgba(247, 0, 255, 0.829),rgb(111, 0, 255));
+    top: 0%;
+    right: -.2rem;
+    transform: translateY(-30%);
+    border-radius: 50%;
+    opacity: 0;
+    transition: .1s linear;
+ 
+}
+.progressBarArea:hover .progreeLine::before{
+opacity: 1;
+width: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    left: 0;
+    padding:0 1rem;
+}
+.control ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    min-height: 6rem;
+    height: 100%;
+    border-radius: .5rem;
+    padding: 0 1rem;
+}
+.control ul li{
+    background-color: rgb(221, 221, 221);
+    background: linear-gradient(45deg,rgba(247, 0, 255, 0.829),rgb(111, 0, 255));
+    border-radius: 50%;
+    padding: .6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1rem rgba(111, 0, 255, 0.521);
+}
+.control ul li i {
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    transition: color .3s linear;
+}
+.control ul li .bx-play {
+    font-size: 3rem;
+
+}
+.control ul li .bx-pause {
+    font-size: 3rem;
+    display: none;
+
+}
+.play_animation{
+    animation: play 4s infinite;
+    transition: .3s;
+}
+@keyframes play {
+    0%{
+        background: rgba(247, 0, 255, 0.829);
+        box-shadow: 0 0 1rem rgba(247, 0, 255, 0.829);
+    }
+    25%{
+        background: rgb(136, 66, 226);
+        box-shadow: 0 0 1.5rem rgba(111, 0, 255, 0.521);
+    }
+    50%{
+        background: rgba(240, 42, 207, 0.829);
+        box-shadow: 0 0 .4rem  rgba(240, 42, 207, 0.829);
+    }
+    75%{
+        background: rgb(119, 0, 255);
+        box-shadow: 0 0 2rem rgba(111, 0, 255, 0.521);
+    }
+    100%{
+        background:rgba(247, 0, 255, 0.685);
+        box-shadow: 0 0 1rem rgba(247, 0, 255, 0.685);
+    }
+}
+.control ul li .icon_active{
+    color: rgb(28, 252, 214) !important;
+}
