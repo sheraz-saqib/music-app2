@@ -6,17 +6,17 @@ const songCollection = [
     audio: new Audio("./song/1.mp3"),
   },
   {
-    name: "D'Amico & Valax - Mirage Of My Heart (ft. Fayzone)  ",
+    name: "Agency talha-anjum ",
     img: "2",
     audio: new Audio("./song/2.mp3"),
   },
   {
-    name: "JB Hain - feel  ",
+    name: "Kahani yari",
     img: "3",
     audio: new Audio("./song/3.mp3"),
   },
   {
-    name: "ATSMXN, XTOM - The Raven  ",
+    name: "ATSMXN, XTOM - The Raven ",
     img: "4",
     audio: new Audio("./song/4.mp3"),
   },
@@ -115,7 +115,16 @@ song.addEventListener("loadeddata", () => {
   findCrrTime();
   findDurationTime();
 });
+songImg.addEventListener('dblclick',(e)=>{
+  
+if(e.offsetX>=300){
+  song.currentTime+=10
+}
+else if(e.offsetX<=150){
+  song.currentTime-=10
+}
 
+})
 nextIcon.onclick = () => {
   song.currentTime = 0;
   song.duration = 0;
