@@ -226,3 +226,6 @@ width: 1rem;
 .control ul li .icon_active{
     color: rgb(28, 252, 214) !important;
 }
+.like-heart{
+    color: red !important; 
+}

@@ -60,7 +60,8 @@ container = document.querySelector(".container"),
   pauseIcon = document.querySelector(".bx-pause"),
   nextIcon = document.querySelector(".bx-skip-next"),
   toggle_icon_li = document.querySelector(".toggle-icon"),
-  heartIcon = document.querySelector(".bx-heart ");
+  heart_li = document.querySelector(".heart_li"),
+  heartIcon = document.querySelector(".bx-heart");
 let songIndex = 0;
 let song = songCollection[songIndex].audio;
 let songNextPlay = false;
@@ -117,10 +118,10 @@ song.addEventListener("loadeddata", () => {
 });
 songImg.addEventListener('dblclick',(e)=>{
   
-if(e.offsetX>=300){
+if(e.offsetX>=180){
   song.currentTime+=10
 }
-else if(e.offsetX<=150){
+else if(e.offsetX<=120){
   song.currentTime-=10
 }
 
@@ -135,7 +136,7 @@ nextIcon.onclick = () => {
     songIndex = 0;
   }
   playSong();
-  console.log("play click");
+  
 };
 
 previousIcon.onclick = () => {
@@ -150,12 +151,7 @@ previousIcon.onclick = () => {
   }
   playSong();
 };
-repeatIcon.onclick = () => {
-    repeatIcon.classList.toggle("icon_active");
-  };
-
-
-
+repeatIcon.onclick = () =>  repeatIcon.classList.toggle("icon_active");
 function timeUpdate() {
   song.addEventListener("timeupdate", () => {
     let songProgress = (song.currentTime / song.duration) * 100;
@@ -186,4 +182,15 @@ progressBarArea.addEventListener("click", (e) => {
   timeUpdate();
   playIcon.click();
 });
+window.localStorage.setItem('heartLike', heartIcon.classList.contains('bxs-heart'))
+
+ let heartlike = window.localStorage.getItem('heartLike')
+heartIcon.addEventListener('click',()=>{
+  heartIcon.classList.toggle('bxs-heart')
+  heartIcon.classList.toggle('bx-heart')
+  heartIcon.classList.toggle('like-heart')
+  song_name.innerHTML= heartlike
+});
+
+
 
