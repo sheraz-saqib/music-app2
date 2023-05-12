@@ -10,7 +10,7 @@
 }
 body{
     min-height: 100vh;
-    background: linear-gradient(45deg, rgb(26, 182, 221),rgb(14, 87, 184));
+    background: linear-gradient(45deg, rgba(133, 26, 221, 0.863),rgb(14, 87, 184));
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -24,7 +24,8 @@ html{
     min-height: 44rem;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.925);
+    background-color: rgba(255, 255, 255, 0.205);
+    /* filter: blur(.5rem); */
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.096);
     padding: 1.2rem;
@@ -35,7 +36,7 @@ margin: 0 1.5rem;
     animation: change_color 10s infinite;
 }
 @keyframes change_color {
-    from {background: linear-gradient(to top,rgb(221, 221, 221), rgba(111, 0, 255, 0.699) 90%)}
+    from {background: linear-gradient(to top,rgb(221, 221, 221), rgba(204, 0, 255, 0.699) 90%)}
 
     10%{
         background: linear-gradient(to top,rgb(221, 221, 221), rgba(147, 0, 255, 0.829) 90%);
@@ -86,6 +87,7 @@ margin: 0 1.5rem;
     width: 100%;
     height: 100%;
     border-radius: 1rem;
+    cursor: pointer;
 
 }
 .song_name{
@@ -94,6 +96,11 @@ margin: 0 1.5rem;
     font-weight: 600;
     text-transform: capitalize;
     font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.songplayIndex{
+    font-weight: 800;
 }
 .sound_detail{
     min-height: 4rem;
@@ -160,16 +167,18 @@ width: 1rem;
     width: 100%;
     left: 0;
     padding:0 1rem;
+ 
 }
 .control ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(233, 233, 233);
+    background-color: rgba(233, 233, 233, 0.37);
     width: 100%;
     min-height: 6rem;
     height: 100%;
     border-radius: .5rem;
+   
     padding: 0 1rem;
 }
 .control ul li{
@@ -181,6 +190,7 @@ width: 1rem;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 1rem rgba(111, 0, 255, 0.521);
+    
 }
 .control ul li i {
     font-size: 2rem;
@@ -228,4 +238,38 @@ width: 1rem;
 }
 .like-heart{
     color: red !important; 
+}
+.volume_control{
+    width: 100%;
+    min-height: 3rem;
+    background-color: rgba(216, 216, 216, 0.849);
+    margin-top: 2rem;
+    border-radius: .6rem;
+    cursor: pointer;
+    
+}
+.volume_bar{
+    width: 100%;
+    background: linear-gradient(45deg,rgba(247, 0, 255, 0.829),rgb(111, 0, 255));
+    min-height: 3rem;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+   transition: width .3s linear;
+}
+.speaker{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.speaker .speakerIcon{
+   margin-left: .5rem;
+    margin-top: 0.3rem;
+}
+.speaker i{
+    font-size: 2rem;
+    color:white;
+cursor: pointer;
+z-index: 99;
 }
