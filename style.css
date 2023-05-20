@@ -30,7 +30,7 @@ html{
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.096);
     padding: 1.2rem;
 position: relative;
-margin: 0 1.5rem;
+margin: 0 .8rem;
 }
 .color_change{
     animation: change_color 10s infinite;
@@ -118,7 +118,7 @@ margin: 0 1.5rem;
     margin-top: 0.5rem;
 }
 .sound_time span{
-    font-weight: 500;
+    font-weight: 700;
 }
 .sound_detail .progressBarArea{
 
@@ -136,7 +136,7 @@ height: .4rem;
 z-index: 1;
 border-radius: 2rem;
 position: relative;
-transition: width .1s linear;
+transition: width .2s linear;
 cursor: pointer;
 }
 .progressBarArea .progreeLine::before{
@@ -241,7 +241,7 @@ width: 1rem;
 }
 .volume_control{
     width: 100%;
-    min-height: 3rem;
+    min-height: 3.5rem;
     background-color: rgba(216, 216, 216, 0.849);
     margin-top: 2rem;
     border-radius: .6rem;
@@ -251,11 +251,12 @@ width: 1rem;
 .volume_bar{
     width: 100%;
     background: linear-gradient(45deg,rgba(247, 0, 255, 0.829),rgb(111, 0, 255));
-    min-height: 3rem;
+    min-height: 3.5rem;
     border-radius: inherit;
     display: flex;
     align-items: center;
    transition: width .3s linear;
+   border-radius: .6rem;
 }
 .speaker{
 
